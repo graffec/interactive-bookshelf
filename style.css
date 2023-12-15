@@ -1,0 +1,238 @@
+:root {
+    --wren:rgb(75, 65, 57);
+    --cinder:rgb(136, 126, 120);
+    --brun:rgb(150, 137, 126);
+    --weathered-teak:rgb(155, 143, 127);
+    --french-oak:rgb(184, 169, 155);
+    --misty-grey:rgb(173, 167, 158);
+
+    --book-background-color: black;
+    --book-dark-color: #ffff;
+    --book-light-color: #ffff;
+    --book-text-color: #ffff;
+
+}
+
+body {
+    background-color: #f4eff0;
+}
+
+.bookshelf {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    border: 10px var(--weathered-teak) solid;
+    overflow: hidden;
+    background-image: linear-gradient(var(--wren), var(--cinder) 220px, var(--brun) 220px, var(--brun) 222px, var(--weathered-teak) 222px,var(--weathered-teak), var(--french-oak) 228px, var(--french-oak) 230px);
+    background-size: 10px 230px;
+    box-shadow: 0px 1000px 0px 400px var(--misty-grey);
+}
+
+.book {
+    height: 200px;
+    width: 40px;
+    float: left;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    transition: transform 0.4s ease;
+    background-color: var(--book-background-color);
+    border-left: 2px solid var(--book-light-color);
+    border-right: 2px solid var(--book-dark-color);
+    color:var(--book-text-color);
+
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book h2 {
+    padding: 0;
+    font-size: 1em;
+    transform-origin: 0% 0%;
+    transform: rotate(0.25turn) translateY(-35px);
+    width: 170px;
+}
+
+/* -- Biography -- */
+.bio {
+    --book-background-color: #940b12;
+    --book-light-color: #9e2329;
+    --book-dark-color: #850910;
+    /* --book-text-color: #ffff; */
+}
+
+/* -- Classic -- */
+.classic {
+    --book-background-color: #bca591;
+    --book-light-color: #c2ae9c;
+    --book-dark-color: #a99482;
+    /* --book-text-color: #ffff; */
+}
+
+/* -- Fantasy -- */
+.fantasy {
+    --book-background-color: #d1d2f9;
+    --book-light-color: #d5d6f9;
+    --book-dark-color: #bcbde0;
+    /* --book-text-color: #ffff; */
+}
+
+/* -- Fiction -- */
+.fiction {
+    --book-background-color: #de7a47;
+    --book-light-color: #e18759;
+    --book-dark-color: #c76d3f;
+    /* --book-text-color: #ffff; */
+}
+
+/* -- Graphic Novels -- */
+.graphic {
+    --book-background-color: #515151;
+    --book-light-color: #5b5b5b;
+    --book-dark-color: #484848;
+    /* --book-text-color: #ffff; */
+}
+
+/* -- Historical Fiction -- */
+.historical {
+    --book-background-color: #2d2419;
+    --book-light-color: #392e1f;
+    --book-dark-color: #221b12;
+    /* --book-text-color: #ffff; */
+
+}
+
+/* -- History -- */
+.history {
+    --book-background-color:#474e2f;
+    --book-dark-color:#333b18;
+    --book-light-color:#5b6246;
+}
+
+/* -- Horror/Suspense/Thriller -- */
+.hst {
+    --book-background-color: #027a76;
+    --book-light-color: #1b8783;
+    --book-dark-color: #016d6a;
+    /* --book-text-color: #ffff; */
+
+}
+
+/* -- Humor -- */
+.humor {
+    --book-background-color: #feb737;
+    --book-light-color: #febe4b;
+    --book-dark-color: #e4a431;
+    /* --book-text-color: #ffff; */
+
+}
+
+/* -- Memoir -- */
+.memoir {
+    --book-background-color: #321e25;
+    --book-light-color: #46343a;
+    --book-dark-color: #2d1b21;
+    /* --book-text-color: #ffff; */
+
+}
+
+/* -- Mystery -- */
+.mystery {
+    --book-background-color: #cfd100;
+    --book-light-color: #e7e900;
+    --book-dark-color: #b8ba00;
+    /* --book-text-color: #ffff; */
+
+}
+
+/* -- Nonfiction -- */
+.nonfiction {
+    --book-background-color: #a73212;
+    --book-light-color: #af4629;
+    --book-dark-color: #962d10;
+    /* --book-text-color: #ffff; */
+
+}
+
+/* -- Philosophy -- */
+.phil {
+    --book-background-color: #5a3e42;
+    --book-light-color: #69484d;
+    --book-dark-color: #4b3437;
+    /* --book-text-color: #ffff; */
+
+}
+
+/* -- Plays -- */
+.plays {
+    --book-background-color: #b97e92;
+    --book-light-color: #c08a9c;
+    --book-dark-color: #a67183;
+    /* --book-text-color: #ffff; */
+  
+}
+
+/* -- Poetry -- */
+.poetry {
+    --book-background-color: #815866;
+    --book-light-color: #946474;
+    --book-dark-color: #6f4b57;
+    /* --book-text-color: #ffff; */
+
+}
+
+/* -- Psychology -- */
+.psych {
+    --book-background-color: #97686e;
+    --book-light-color: #a1777c;
+    --book-dark-color: #875d63;
+    /* --book-text-color: #ffff; */
+}
+
+/* -- Romance -- */
+.romance {
+    --book-background-color: #cc4359;
+    --book-light-color: #e54b64;
+    --book-dark-color: #b23a4e;
+    /* --book-text-color: #ffff; */
+
+}
+
+/* -- Short Story -- */
+.short {
+    --book-background-color: #edd59e;
+    --book-light-color: #eed9a7;
+    --book-dark-color: #d5bf8e;
+    /* --book-text-color: #ffff; */
+
+}
+
+/* -- Science Fiction -- */
+.sci-fi {
+    --book-background-color: #cae327;
+
+    --book-light-color: #e1fd2c;
+    --book-dark-color: #b4ca23;
+    /* --book-text-color: #ffff; */
+
+}
+
+/* -- True Crime -- */
+.true {
+    --book-background-color: #1D1615;
+    --book-light-color: #332d2c;
+    --book-dark-color: #1a1312;
+    /* --book-text-color: #ffff; */
+
+}
+
+/* -- Young Adult -- */
+.ya {
+    --book-background-color: #008566;
+    --book-light-color: #199175;
+    --book-dark-color: #00775b;
+    /* --book-text-color: #ffff; */
+
+}
