@@ -4,7 +4,7 @@ from collections import defaultdict
 
 
 # Path to CSV file
-csv_file_path = 'book-list.csv'
+csv_file_path = 'books.csv'
 
 # CSV headers
 title_header = 'Title'
@@ -16,7 +16,7 @@ string_2 = '<h2>'
 string_3 = '</h2></div>'
 
 
-additional_string = " (Special Genre)"
+# additional_string = " (Special Genre)"
 
 titles = []
 
@@ -88,7 +88,7 @@ for row in sorted_data:
         formatted_title = string_1 + 'romance">' + string_2 + f"{title}" + string_3
         titles.append(formatted_title)    
     elif genres and genres[0] == "Self-Help":  
-        formatted_title = string_1 + 'sci-fi">' + string_2 + f"{title}" + string_3
+        formatted_title = string_1 + 'self-help">' + string_2 + f"{title}" + string_3
         titles.append(formatted_title)      
     elif genres and genres[0] == "Science Fiction":  
         formatted_title = string_1 + 'sci-fi">' + string_2 + f"{title}" + string_3
@@ -103,8 +103,8 @@ for row in sorted_data:
         titles.append(f"{title}\n")
     genres_list.add(genres[0])
 
-with open(html_file_path, 'w') as output_file:
-    output_file.write('\n'.join(titles))
+# with open(html_file_path, 'w') as output_file:
+#     output_file.write('\n'.join(titles))
 
-for g in genres_list:
+for g in titles:
     print(g)

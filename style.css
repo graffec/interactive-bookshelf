@@ -26,7 +26,7 @@ body {
     overflow: hidden;
     background-image: linear-gradient(var(--wren), var(--cinder) 220px, var(--brun) 220px, var(--brun) 222px, var(--weathered-teak) 222px,var(--weathered-teak), var(--french-oak) 228px, var(--french-oak) 230px);
     background-size: 10px 230px;
-    box-shadow: 0px 1000px 0px 400px var(--misty-grey);
+    box-shadow: 0px 2000px 0px 400px var(--misty-grey);
 }
 
 .book {
@@ -51,6 +51,14 @@ body {
 .book h2 {
     padding: 0;
     font-size: 1em;
+    transform-origin: 0% 0%;
+    transform: rotate(0.25turn) translateY(-35px);
+    width: 170px;
+}
+
+.book h3 {
+    padding: 0;
+    font-size: .75em;
     transform-origin: 0% 0%;
     transform: rotate(0.25turn) translateY(-35px);
     width: 170px;
@@ -148,6 +156,12 @@ body {
 
 }
 
+/* -- Myth -- */
+.myth {
+    --book-background-color: #23354B;
+    --book-light-color: #38495d;
+    --book-dark-color: #1f2f43;
+}
 /* -- Nonfiction -- */
 .nonfiction {
     --book-background-color: #a73212;
@@ -167,7 +181,7 @@ body {
 }
 
 /* -- Plays -- */
-.plays {
+.play {
     --book-background-color: #b97e92;
     --book-light-color: #c08a9c;
     --book-dark-color: #a67183;
@@ -201,6 +215,13 @@ body {
 
 }
 
+/* -- Self-Help -- */
+.self-help {
+    --book-background-color: #fe676e;
+    --book-light-color: #fe767c;
+    --book-dark-color: #e45c63;
+    
+}
 /* -- Short Story -- */
 .short {
     --book-background-color: #edd59e;
@@ -230,7 +251,7 @@ body {
 }
 
 /* -- Young Adult -- */
-.ya {
+.young-adult {
     --book-background-color: #008566;
     --book-light-color: #199175;
     --book-dark-color: #00775b;
